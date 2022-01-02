@@ -29,7 +29,7 @@ while True:
 cap = cv2.VideoCapture(0)   
 cap.set(3,640)              # width is id number 3
 cap.set(4,480)              # height is id number 4
-
+cap.set(10,100)             # id for brightness is 10
 while True:
     success,img = cap.read()
     cv2.imshow("Video",img)
