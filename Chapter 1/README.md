@@ -21,4 +21,18 @@ while True:
     success,img = cap.read()
     cv2.imshow("Video",img)
     if(cv2.waitKey(1) & 0xFF == ord('q')):
-        break```
+        break
+```
+---------------------------
+##  3)  Accessing Webcam 
+```ruby
+cap = cv2.VideoCapture(0)   
+cap.set(3,640)              # width is id number 3
+cap.set(4,480)              # height is id number 4
+
+while True:
+    success,img = cap.read()
+    cv2.imshow("Video",img)
+    if(cv2.waitKey(1) & 0xFF == ord('q')):
+        break
+    ```
