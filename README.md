@@ -1,4 +1,20 @@
-# Computer-Vision-Learn
+# Computer Vision Learn
+```ruby
+import cv2
+!pip install mediapipe 
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```ruby
 import cv2
