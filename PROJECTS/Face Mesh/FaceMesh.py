@@ -1,3 +1,6 @@
+import cv2
+import mediapipe as mp
+
 mpdraw = mp.solutions.drawing_utils
 mpfacemesh = mp.solutions.face_mesh
 facemesh = mpfacemesh.FaceMesh(static_image_mode=True, min_detection_confidence= 0.5, min_tracking_confidence=0.5)
