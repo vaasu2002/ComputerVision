@@ -6,3 +6,6 @@ to allow for more space for the kernel to cover the image. Adding padding to an 
 if the padding in a CNN is set to zero, then every pixel value that is added will be of value zero. If, however, the zero padding is set to one, there will be a one pixel border 
 added to the image with a pixel value of zero.
 
+##  Types:-
+1)  Valid
+2)  Same
