@@ -1,6 +1,5 @@
 ```ruby
 import cv2
-import mediapipe as mp
  
 capture = cv2.VideoCapture("")
 pTime = 0
