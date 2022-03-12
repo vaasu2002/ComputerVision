@@ -1,4 +1,6 @@
-import cv2 as cv2 
-img = cv2.imread("image.jpeg")
-cv2.imshow('text', img)
+import cv2
+# LOAD AN IMAGE USING 'IMREAD'
+img = cv2.imread("ImageName.png")
+# DISPLAY
+cv2.imshow("Lena Soderberg",img)
 cv2.waitKey(0)
