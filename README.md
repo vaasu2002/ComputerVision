@@ -1,34 +1,21 @@
 # Computer Vision Learn
 ```ruby
 import cv2
-!pip install mediapipe 
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-```ruby
-import cv2
-path = 'image_name'
-img = cv2.imread(path)
-
+import numpy as np
+ 
+img = cv2.imread("Resources/lena.png")
+kernel = np.ones((5,5),np.uint8)
+ 
 imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-imgBlur = cv2.GaussianBlur(imgGray,(7,7),1) 
-
-imgBlur = cv2.GaussianBlur(imgGray,(7,7),1)
-imgCanny = cv2.Canny(imgBlur,50,50)
-getContours(imgCanny)
+imgBlur = cv2.GaussianBlur(imgGray,(7,7),0)
+imgCanny = cv2.Canny(img,150,200)
+imgDialation = cv2.dilate(imgCanny,kernel,iterations=1)
+imgEroded = cv2.erode(imgDialation,kernel,iterations=1)
+ 
+cv2.imshow("Gray Image",imgGray)
+cv2.imshow("Blur Image",imgBlur)
+cv2.imshow("Canny Image",imgCanny)
+cv2.imshow("Dialation Image",imgDialation)
+cv2.imshow("Eroded Image",imgEroded)
+cv2.waitKey(0)
 ```
-
-imgBlur = cv2.GaussianBlur(imgGray,(7,7),1)
-(7,7) - kernal size
-1 - sigma (higher the value of sigma more the blur)
