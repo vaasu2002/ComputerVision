@@ -32,3 +32,17 @@ cv2.imshow('Erosion', erosion)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
+## **Morphological Gradient**
+![Morphological Gradient Image](https://github.com/vaasu2002/ComputerVision/blob/main/Image%20Thresholding/Morphological%20Transformations/IMAGES/Morphological%20Gradient.PNG)
+```ruby
+import cv2
+import numpy as np
+
+img = cv2.imread('img/op.png',0) # GRAY SCALE
+kernel = np.ones((5,5),np.uint8)
+gradient = cv2.morphologyEx(img, cv2.MORPH_GRADIENT, kernel)
+
+cv2.imshow('gradient', gradient)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
