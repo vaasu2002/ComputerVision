@@ -1,4 +1,5 @@
 # Morphological Transformations
+![Original Images](Image Thresholding/Morphological Transformations/IMAGES/original.png)
 
 ### Dilation
 Add pixel to the boundart, connects area that are seperated, in gray scale image dialation increases the brightness of the object,
